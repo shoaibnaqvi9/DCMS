@@ -1,0 +1,41 @@
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\bin\Debug\Project.exe.config
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\bin\Debug\Project.exe
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\bin\Debug\Project.pdb
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\bin\Debug\BusinessLogicLayer.dll
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\bin\Debug\DataAccessLayer.dll
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\bin\Debug\DataAccessLayer.pdb
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\obj\Debug\Project.csproj.CopyComplete
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\obj\Debug\Project.exe
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\obj\Debug\Project.pdb
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\obj\Debug\Project.server_connection.resources
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\obj\Debug\Project.patient_registration.resources
+C:\Users\Shoaib Naqvi\source\repos\Project\Project\obj\Debug\Project.patient_login.resources
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\bin\Debug\Project.exe.config
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\bin\Debug\Project.exe
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\bin\Debug\Project.pdb
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\bin\Debug\BusinessLogicLayer.dll
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\bin\Debug\DataAccessLayer.dll
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\bin\Debug\BusinessLogicLayer.pdb
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\bin\Debug\DataAccessLayer.pdb
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.patient_login.resources
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.patient_registration.resources
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.Properties.Resources.resources
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.server_connection.resources
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.csproj.CopyComplete
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.exe
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.pdb
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.Dashboard_patient.resources
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.patient_appointment.resources
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.doctor_registration.resources
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.doctor_login.resources
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.admin_registration.resources
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.admin_login.resources
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\Project\obj\Debug\Project.Dashboard.resources

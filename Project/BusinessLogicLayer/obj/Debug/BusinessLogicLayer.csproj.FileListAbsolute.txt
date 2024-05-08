@@ -1,0 +1,18 @@
+C:\Users\Shoaib Naqvi\source\repos\Project\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Users\Shoaib Naqvi\source\repos\Project\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\Shoaib Naqvi\source\repos\Project\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Shoaib Naqvi\source\repos\Project\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Shoaib Naqvi\source\repos\Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\Shoaib Naqvi\source\repos\Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Shoaib Naqvi\source\repos\Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
+C:\Users\Shoaib Naqvi\source\repos\Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Users\Shoaib Naqvi\source\repos\Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+D:\PAF KIET\Fifth Semester\OOAD\Project\Project\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
