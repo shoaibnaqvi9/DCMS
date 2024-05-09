@@ -64,6 +64,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_admin.Designer.cs">
+      <DependentUpon>Dashboard_admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard_patient.cs">
       <SubType>Form</SubType>
     </Compile>
