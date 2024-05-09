@@ -10,3 +10,9 @@ D:\PAF KIET\Fifth Semester\OOAD\Project\Project\DataAccessLayer\obj\Debug\DataAc
 D:\PAF KIET\Fifth Semester\OOAD\Project\Project\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 D:\PAF KIET\Fifth Semester\OOAD\Project\Project\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\PAF KIET\Fifth Semester\OOAD\Project\Project\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\DataAccessLayer\bin\Debug\DataAccessLayer.pdb

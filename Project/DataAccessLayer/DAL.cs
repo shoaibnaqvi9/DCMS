@@ -6,21 +6,15 @@ using System.Web;
 
 namespace DataAccessLayer
 {
-    /// <summary>
-    /// Summary description for Class1.
-    /// </summary>
     public class DAL
     {
         private static System.Collections.Hashtable SqlparamCache = System.Collections.Hashtable.Synchronized(new System.Collections.Hashtable());
         private SqlConnection Connection = new SqlConnection();
-
         public static string ConnectionString = System.Configuration.ConfigurationSettings.AppSettings["dbCon"].ToString();
-
         private SqlCommand DbCommand = new SqlCommand();
         private SqlDataAdapter DtAdapter = new SqlDataAdapter();
         private DataSet SqlDataSet = new DataSet();
         private DataTable SqlTable = new System.Data.DataTable();
-
 
         public void UnLoadSpParameters()
         {

@@ -38,8 +38,13 @@ namespace Project
                 {
                     throw new FormatException("Invalid contact number format. Contact number must be 12 digits long and contain only numbers.");
                 }
-                BLL b = new BLL();
-                b.Doctor_Registration(Doctorid, Doctorname, Doctorspecialization, Doctorcontact, Doctoraddress);
+                DoctorRegistration doctorRegistration = new DoctorRegistration();
+                doctorRegistration.Doctorid = Doctorid;
+                doctorRegistration.Doctorname = Doctorname;
+                doctorRegistration.Doctorspecialization = Doctorspecialization;
+                doctorRegistration.Doctorcontact = Doctorcontact;
+                doctorRegistration.Doctoraddress = Doctoraddress;
+                doctorRegistration.Register();
                 MessageBox.Show("Registered");
             }
             catch (FormatException ex)

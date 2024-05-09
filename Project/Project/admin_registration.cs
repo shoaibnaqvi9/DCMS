@@ -40,8 +40,14 @@ namespace Project
                 {
                     throw new FormatException("Invalid contact number format. Contact number must be 12 digits long and contain only numbers.");
                 }
-                BLL b = new BLL();
-                b.Admin_Registration(Adminname, Adminpassword, Adminrepass, Admincontact, Adminaddress);
+                AdminRegistration adminRegistration = new AdminRegistration();
+                adminRegistration.Adminname=Adminname;
+                adminRegistration.Adminpassword=Adminpassword;
+                adminRegistration.Adminrepass=Adminrepass;
+                adminRegistration.Admincontact=Admincontact;
+                adminRegistration.Adminaddress=Adminaddress;
+                adminRegistration.Register();
+                
                 MessageBox.Show("Registered");
             }
             catch (FormatException ex)
