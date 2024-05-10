@@ -16,7 +16,7 @@ namespace Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new server_connection());
+            Application.Run(new patient_appointment());
         }
     }
 }

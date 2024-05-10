@@ -24,6 +24,7 @@ namespace Project
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+            Environment.Exit(0);
         }
 
         private void btnClose_Click(object sender, EventArgs e)

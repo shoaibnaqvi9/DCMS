@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using DataAccessLayer;
 
@@ -125,6 +126,15 @@ namespace BusinessLogicLayer
             bool loginSuccessful = reader.HasRows;
             d.CloseConnection();
             return loginSuccessful;
+        }
+        public DataTable GetDoctorDetails()
+        {
+            DAL d = new DAL();
+            d.OpenConnection();
+            d.LoadSpParameters("_spgetdoctor_details");
+            DataTable dataTable = d.GetDataTable();
+            d.CloseConnection();
+            return dataTable;
         }
     }
 }
