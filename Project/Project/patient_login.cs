@@ -35,7 +35,7 @@ namespace Project
                 {
                     MessageBox.Show("LoggedIn Successfully");
                     this.Hide();
-                    Form f = new Dashboard_patient();
+                    Form f = new Dashboard_patient(log);
                     f.Show();
                 }
                 else

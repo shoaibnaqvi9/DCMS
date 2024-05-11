@@ -12,9 +12,14 @@ namespace Project
 {
     public partial class Dashboard_patient : Form
     {
-        public Dashboard_patient()
+        private int patientid;
+
+        public Dashboard_patient(int patientid)
         {
             InitializeComponent();
+            this.patientid = patientid;
+
+            lblPatient.Text = "Welcome, " + patientid;
         }
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -40,6 +45,11 @@ namespace Project
             this.Hide();
             Form f = new patient_appointment();
             f.Show();
+        }
+
+        private void Dashboard_patient_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

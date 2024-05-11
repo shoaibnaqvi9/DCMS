@@ -39,8 +39,8 @@
             this.dgvDoctor = new System.Windows.Forms.DataGridView();
             this.lblDateofAppointment = new System.Windows.Forms.Label();
             this.dtpAppoint = new System.Windows.Forms.DateTimePicker();
-            this.lblComments = new System.Windows.Forms.Label();
-            this.rtbComment = new System.Windows.Forms.RichTextBox();
+            this.lblAppointmentpurpose = new System.Windows.Forms.Label();
+            this.rtbAppointmentpurpose = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoctor)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,26 +154,26 @@
             this.dtpAppoint.TabIndex = 69;
             this.dtpAppoint.ValueChanged += new System.EventHandler(this.dtpAppoint_ValueChanged);
             // 
-            // lblComments
+            // lblAppointmentpurpose
             // 
-            this.lblComments.AutoSize = true;
-            this.lblComments.BackColor = System.Drawing.Color.Transparent;
-            this.lblComments.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComments.Location = new System.Drawing.Point(450, 211);
-            this.lblComments.Name = "lblComments";
-            this.lblComments.Size = new System.Drawing.Size(92, 18);
-            this.lblComments.TabIndex = 71;
-            this.lblComments.Text = "Comments";
+            this.lblAppointmentpurpose.AutoSize = true;
+            this.lblAppointmentpurpose.BackColor = System.Drawing.Color.Transparent;
+            this.lblAppointmentpurpose.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAppointmentpurpose.Location = new System.Drawing.Point(450, 211);
+            this.lblAppointmentpurpose.Name = "lblAppointmentpurpose";
+            this.lblAppointmentpurpose.Size = new System.Drawing.Size(176, 18);
+            this.lblAppointmentpurpose.TabIndex = 71;
+            this.lblAppointmentpurpose.Text = "Appointment Purpose";
             // 
-            // rtbComment
+            // rtbAppointmentpurpose
             // 
-            this.rtbComment.Font = new System.Drawing.Font("Bookman Old Style", 9.75F);
-            this.rtbComment.Location = new System.Drawing.Point(636, 211);
-            this.rtbComment.Name = "rtbComment";
-            this.rtbComment.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.rtbComment.Size = new System.Drawing.Size(200, 69);
-            this.rtbComment.TabIndex = 72;
-            this.rtbComment.Text = "";
+            this.rtbAppointmentpurpose.Font = new System.Drawing.Font("Bookman Old Style", 9.75F);
+            this.rtbAppointmentpurpose.Location = new System.Drawing.Point(636, 211);
+            this.rtbAppointmentpurpose.Name = "rtbAppointmentpurpose";
+            this.rtbAppointmentpurpose.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.rtbAppointmentpurpose.Size = new System.Drawing.Size(200, 69);
+            this.rtbAppointmentpurpose.TabIndex = 72;
+            this.rtbAppointmentpurpose.Text = "";
             // 
             // patient_appointment
             // 
@@ -182,8 +182,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(900, 450);
-            this.Controls.Add(this.rtbComment);
-            this.Controls.Add(this.lblComments);
+            this.Controls.Add(this.rtbAppointmentpurpose);
+            this.Controls.Add(this.lblAppointmentpurpose);
             this.Controls.Add(this.dtpAppoint);
             this.Controls.Add(this.lblDateofAppointment);
             this.Controls.Add(this.dgvDoctor);
@@ -217,7 +217,7 @@
         private System.Windows.Forms.DataGridView dgvDoctor;
         private System.Windows.Forms.Label lblDateofAppointment;
         private System.Windows.Forms.DateTimePicker dtpAppoint;
-        private System.Windows.Forms.Label lblComments;
-        private System.Windows.Forms.RichTextBox rtbComment;
+        private System.Windows.Forms.Label lblAppointmentpurpose;
+        private System.Windows.Forms.RichTextBox rtbAppointmentpurpose;
     }
 }

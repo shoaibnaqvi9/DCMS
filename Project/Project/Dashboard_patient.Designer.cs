@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_patient));
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnAppointment = new System.Windows.Forms.Button();
-            this.btnMedicalHistory = new System.Windows.Forms.Button();
             this.btnNotification = new System.Windows.Forms.Button();
             this.btnFeedback = new System.Windows.Forms.Button();
             this.lblPRF = new System.Windows.Forms.Label();
             this.lblPatientName = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.lblPatient = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLogout
@@ -54,7 +54,7 @@
             // btnAppointment
             // 
             this.btnAppointment.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAppointment.Location = new System.Drawing.Point(32, 118);
+            this.btnAppointment.Location = new System.Drawing.Point(128, 125);
             this.btnAppointment.Name = "btnAppointment";
             this.btnAppointment.Size = new System.Drawing.Size(161, 39);
             this.btnAppointment.TabIndex = 33;
@@ -62,20 +62,10 @@
             this.btnAppointment.UseVisualStyleBackColor = true;
             this.btnAppointment.Click += new System.EventHandler(this.btnAppointment_Click);
             // 
-            // btnMedicalHistory
-            // 
-            this.btnMedicalHistory.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMedicalHistory.Location = new System.Drawing.Point(212, 118);
-            this.btnMedicalHistory.Name = "btnMedicalHistory";
-            this.btnMedicalHistory.Size = new System.Drawing.Size(161, 39);
-            this.btnMedicalHistory.TabIndex = 34;
-            this.btnMedicalHistory.Text = "Medical History";
-            this.btnMedicalHistory.UseVisualStyleBackColor = true;
-            // 
             // btnNotification
             // 
             this.btnNotification.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNotification.Location = new System.Drawing.Point(32, 180);
+            this.btnNotification.Location = new System.Drawing.Point(32, 184);
             this.btnNotification.Name = "btnNotification";
             this.btnNotification.Size = new System.Drawing.Size(161, 39);
             this.btnNotification.TabIndex = 35;
@@ -85,7 +75,7 @@
             // btnFeedback
             // 
             this.btnFeedback.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFeedback.Location = new System.Drawing.Point(212, 180);
+            this.btnFeedback.Location = new System.Drawing.Point(212, 184);
             this.btnFeedback.Name = "btnFeedback";
             this.btnFeedback.Size = new System.Drawing.Size(161, 39);
             this.btnFeedback.TabIndex = 36;
@@ -136,6 +126,14 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // lblPatient
+            // 
+            this.lblPatient.AutoSize = true;
+            this.lblPatient.Location = new System.Drawing.Point(49, 64);
+            this.lblPatient.Name = "lblPatient";
+            this.lblPatient.Size = new System.Drawing.Size(0, 13);
+            this.lblPatient.TabIndex = 46;
+            // 
             // Dashboard_patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,19 +141,20 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(725, 361);
+            this.Controls.Add(this.lblPatient);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblPRF);
             this.Controls.Add(this.lblPatientName);
             this.Controls.Add(this.btnFeedback);
             this.Controls.Add(this.btnNotification);
-            this.Controls.Add(this.btnMedicalHistory);
             this.Controls.Add(this.btnAppointment);
             this.Controls.Add(this.btnLogout);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard_patient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_patient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,12 +163,12 @@
         #endregion
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnAppointment;
-        private System.Windows.Forms.Button btnMedicalHistory;
         private System.Windows.Forms.Button btnNotification;
         private System.Windows.Forms.Button btnFeedback;
         private System.Windows.Forms.Label lblPRF;
         private System.Windows.Forms.Label lblPatientName;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label lblPatient;
     }
 }

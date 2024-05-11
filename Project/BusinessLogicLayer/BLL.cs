@@ -82,19 +82,29 @@ namespace BusinessLogicLayer
         public string Doctorcontact { get; set; }
         public string Doctoraddress { get; set; }
     }
-
-    public class BLL
+    public class AppointmentBooking: Registration
     {
-        public void Server_Connection(string server, string database, string db_username, string db_password)
+        public override void Register()
         {
-            DAL d = new DAL();
-            d.OpenConnection();
-            d.LoadSpParameters("_spinsertserver", server, database, db_username, db_password);
-            d.ExecuteQuery();
-            d.UnLoadSpParameters();
-            d.CloseConnection();
+            OpenAndCloseConnection(() =>
+            {
+                d.LoadSpParameters("_spinsertappointment_detail", Patientid, Patientname, Patientdob, Patientgender, PatientCNIC, Patientweight, Patientcontact, Patientaddress);
+                d.ExecuteQuery();
+                d.UnLoadSpParameters();
+            });
         }
 
+        public int Patientid { get; set; }
+        public string Patientname { get; set; }
+        public DateTime Patientdob { get; set; }
+        public string Patientgender { get; set; }
+        public string PatientCNIC { get; set; }
+        public int Patientweight { get; set; }
+        public string Patientcontact { get; set; }
+        public string Patientaddress { get; set; }
+    }
+    public class BLL
+    {
         public bool Login_patient(string log)
         {
             DAL d = new DAL();
@@ -104,6 +114,20 @@ namespace BusinessLogicLayer
             bool loginSuccessful = reader.Read();
             d.CloseConnection();
             return loginSuccessful;
+        }
+        public string Dashboard_patient(string log)
+        {
+            string patientName = null;
+            DAL d = new DAL();
+            d.OpenConnection();
+            d.LoadSpParameters("_spdasboardpatient", log);
+            SqlDataReader reader = d.GetDataReader();
+            if (reader.Read())
+            {
+                patientName = reader["patientname"].ToString();
+            }
+            d.CloseConnection();
+            return patientName;
         }
 
         public bool Login_doctor(string log)
@@ -136,5 +160,6 @@ namespace BusinessLogicLayer
             d.CloseConnection();
             return dt;
         }
+
     }
 }

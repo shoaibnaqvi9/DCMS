@@ -12,6 +12,7 @@ namespace Project
 {
     public partial class patient_appointment : Form
     {
+        
         private BLL bll = new BLL();
         Random random = new Random();
         public patient_appointment()
@@ -34,8 +35,8 @@ namespace Project
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new Dashboard_patient();
-            f.Show();
+            //Form f = new Dashboard_patient(patientName);
+            //f.Show();
         }
         private void patient_appointment_Load(object sender, EventArgs e)
         {
@@ -69,10 +70,44 @@ namespace Project
                 dtpAppoint.Value = currentDate;
             }
         }
-
         private void btnAppoint_Click(object sender, EventArgs e)
         {
             int appointmentId = random.Next(100000);
+            string appointment_status = "Booked";
+ //           try
+ //           {
+ //               patient_id INT,
+ //   doctor_id INT,
+	//appointment_date DATE,
+ //   appointment_purpose NVARCHAR(MAX),
+	//appointment_status NVARCHAR(MAX)
+ //               string Doctorname = txtDoctorname.Text;
+ //               DateTime AppointmentDate= DateTime.Parse(dtpAppoint.Text);
+ //               string Doctorspecialization = txtDoctorspecialization.Text;
+ //               string Doctoraddress = txtDoctoraddress.Text;
+
+ //               if (!System.Text.RegularExpressions.Regex.IsMatch(Doctorcontact, @"^\d{12}$"))
+ //               {
+ //                   throw new FormatException("Invalid contact number format. Contact number must be 12 digits long and contain only numbers.");
+ //               }
+ //               DoctorRegistration doctorRegistration = new DoctorRegistration();
+ //               doctorRegistration.Doctorid = Doctorid;
+ //               doctorRegistration.Doctorname = Doctorname;
+ //               doctorRegistration.Doctorspecialization = Doctorspecialization;
+ //               doctorRegistration.Doctorcontact = Doctorcontact;
+ //               doctorRegistration.Doctoraddress = Doctoraddress;
+ //               doctorRegistration.Register();
+ //               MessageBox.Show("Registered");
+ //           }
+ //           catch (FormatException ex)
+ //           {
+ //               MessageBox.Show("Invalid input format: " + ex.Message);
+ //           }
+ //           catch (Exception ex)
+ //           {
+ //               MessageBox.Show("An error occurred: " + ex.Message);
+ //           }
+
         }
-    } 
+    }
 }
