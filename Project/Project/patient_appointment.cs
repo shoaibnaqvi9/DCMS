@@ -13,6 +13,7 @@ namespace Project
     public partial class patient_appointment : Form
     {
         private BLL bll = new BLL();
+        Random random = new Random();
         public patient_appointment()
         {
             InitializeComponent();
@@ -36,7 +37,7 @@ namespace Project
             Form f = new Dashboard_patient();
             f.Show();
         }
-        private void LoadDoctorDetails()
+        private void patient_appointment_Load(object sender, EventArgs e)
         {
             try
             {
@@ -49,9 +50,29 @@ namespace Project
             }
         }
 
-        private void patient_appointment_Load(object sender, EventArgs e)
+        private void dgvDoctor_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            LoadDoctorDetails();
+            if (e.RowIndex >= 0)
+            {
+                dgvDoctor.ClearSelection();
+                dgvDoctor.Rows[e.RowIndex].Selected = true;
+            }
         }
-    }
+
+        private void dtpAppoint_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime selectedDate = dtpAppoint.Value;
+            DateTime currentDate = DateTime.Today;
+            if (selectedDate < currentDate)
+            {
+                MessageBox.Show("Please select a date that is not in the past.");
+                dtpAppoint.Value = currentDate;
+            }
+        }
+
+        private void btnAppoint_Click(object sender, EventArgs e)
+        {
+            int appointmentId = random.Next(100000);
+        }
+    } 
 }

@@ -37,6 +37,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnAppoint = new System.Windows.Forms.Button();
             this.dgvDoctor = new System.Windows.Forms.DataGridView();
+            this.lblDateofAppointment = new System.Windows.Forms.Label();
+            this.dtpAppoint = new System.Windows.Forms.DateTimePicker();
+            this.lblComments = new System.Windows.Forms.Label();
+            this.rtbComment = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoctor)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,9 +62,9 @@
             this.label1.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(14, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(542, 18);
+            this.label1.Size = new System.Drawing.Size(430, 18);
             this.label1.TabIndex = 47;
-            this.label1.Text = "Note: OPD Schedule is for Reference only. Kindly contact Admin counter Hospital.";
+            this.label1.Text = "Note: OPD Schedule is for Reference only. Kindly contact Admin.";
             // 
             // lblPRF
             // 
@@ -116,14 +120,60 @@
             this.btnAppoint.TabIndex = 57;
             this.btnAppoint.Text = "Appoint";
             this.btnAppoint.UseVisualStyleBackColor = true;
+            this.btnAppoint.Click += new System.EventHandler(this.btnAppoint_Click);
             // 
             // dgvDoctor
             // 
+            this.dgvDoctor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dgvDoctor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDoctor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDoctor.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvDoctor.Location = new System.Drawing.Point(17, 153);
             this.dgvDoctor.Name = "dgvDoctor";
-            this.dgvDoctor.Size = new System.Drawing.Size(454, 228);
+            this.dgvDoctor.Size = new System.Drawing.Size(322, 238);
             this.dgvDoctor.TabIndex = 58;
+            this.dgvDoctor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDoctor_CellContentClick);
+            // 
+            // lblDateofAppointment
+            // 
+            this.lblDateofAppointment.AutoSize = true;
+            this.lblDateofAppointment.BackColor = System.Drawing.Color.Transparent;
+            this.lblDateofAppointment.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateofAppointment.Location = new System.Drawing.Point(450, 167);
+            this.lblDateofAppointment.Name = "lblDateofAppointment";
+            this.lblDateofAppointment.Size = new System.Drawing.Size(170, 18);
+            this.lblDateofAppointment.TabIndex = 68;
+            this.lblDateofAppointment.Text = "Date of Appointment";
+            // 
+            // dtpAppoint
+            // 
+            this.dtpAppoint.CalendarFont = new System.Drawing.Font("Bookman Old Style", 9.75F);
+            this.dtpAppoint.Location = new System.Drawing.Point(636, 164);
+            this.dtpAppoint.Name = "dtpAppoint";
+            this.dtpAppoint.Size = new System.Drawing.Size(200, 20);
+            this.dtpAppoint.TabIndex = 69;
+            this.dtpAppoint.ValueChanged += new System.EventHandler(this.dtpAppoint_ValueChanged);
+            // 
+            // lblComments
+            // 
+            this.lblComments.AutoSize = true;
+            this.lblComments.BackColor = System.Drawing.Color.Transparent;
+            this.lblComments.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComments.Location = new System.Drawing.Point(450, 211);
+            this.lblComments.Name = "lblComments";
+            this.lblComments.Size = new System.Drawing.Size(92, 18);
+            this.lblComments.TabIndex = 71;
+            this.lblComments.Text = "Comments";
+            // 
+            // rtbComment
+            // 
+            this.rtbComment.Font = new System.Drawing.Font("Bookman Old Style", 9.75F);
+            this.rtbComment.Location = new System.Drawing.Point(636, 211);
+            this.rtbComment.Name = "rtbComment";
+            this.rtbComment.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.rtbComment.Size = new System.Drawing.Size(200, 69);
+            this.rtbComment.TabIndex = 72;
+            this.rtbComment.Text = "";
             // 
             // patient_appointment
             // 
@@ -132,6 +182,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(900, 450);
+            this.Controls.Add(this.rtbComment);
+            this.Controls.Add(this.lblComments);
+            this.Controls.Add(this.dtpAppoint);
+            this.Controls.Add(this.lblDateofAppointment);
             this.Controls.Add(this.dgvDoctor);
             this.Controls.Add(this.btnAppoint);
             this.Controls.Add(this.label2);
@@ -161,5 +215,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAppoint;
         private System.Windows.Forms.DataGridView dgvDoctor;
+        private System.Windows.Forms.Label lblDateofAppointment;
+        private System.Windows.Forms.DateTimePicker dtpAppoint;
+        private System.Windows.Forms.Label lblComments;
+        private System.Windows.Forms.RichTextBox rtbComment;
     }
 }

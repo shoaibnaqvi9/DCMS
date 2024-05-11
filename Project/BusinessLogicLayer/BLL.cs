@@ -132,9 +132,9 @@ namespace BusinessLogicLayer
             DAL d = new DAL();
             d.OpenConnection();
             d.LoadSpParameters("_spgetdoctor_details");
-            DataTable dataTable = d.GetDataTable();
+            DataTable dt = d.GetDataTable();
             d.CloseConnection();
-            return dataTable;
+            return dt;
         }
     }
 }

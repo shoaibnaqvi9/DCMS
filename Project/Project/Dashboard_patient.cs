@@ -18,7 +18,9 @@ namespace Project
         }
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            Logout();
+            this.Hide();
+            Form f = new patient_login();
+            f.Show();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -31,12 +33,6 @@ namespace Project
         {
             this.Close();
             Environment.Exit(0);
-        }
-        private void Logout()
-        {
-            this.Hide();
-            patient_registration patientRegistrationForm = new patient_registration();
-            patientRegistrationForm.Show();
         }
 
         private void btnAppointment_Click(object sender, EventArgs e)
