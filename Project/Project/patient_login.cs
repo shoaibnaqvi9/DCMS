@@ -20,7 +20,7 @@ namespace Project
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new Dashboard();
+            Form f = new Admin_Portal();
             f.Show();
         }
 
@@ -28,7 +28,7 @@ namespace Project
         {
             try
             {
-                string log = txtLogin.Text;
+                int log = int.Parse(txtLogin.Text);
                 BLL b = new BLL();
                 bool loginSuccessful=b.Login_patient(log);
                 if (loginSuccessful)

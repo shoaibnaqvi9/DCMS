@@ -105,7 +105,7 @@ namespace BusinessLogicLayer
     }
     public class BLL
     {
-        public bool Login_patient(string log)
+        public bool Login_patient(int log)
         {
             DAL d = new DAL();
             d.OpenConnection();

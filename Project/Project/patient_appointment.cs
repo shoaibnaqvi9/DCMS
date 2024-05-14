@@ -12,7 +12,8 @@ namespace Project
 {
     public partial class patient_appointment : Form
     {
-        
+        private int patientid;
+
         private BLL bll = new BLL();
         Random random = new Random();
         public patient_appointment()
@@ -35,8 +36,8 @@ namespace Project
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //Form f = new Dashboard_patient(patientName);
-            //f.Show();
+            Form f = new Dashboard_patient(patientid);
+            f.Show();
         }
         private void patient_appointment_Load(object sender, EventArgs e)
         {

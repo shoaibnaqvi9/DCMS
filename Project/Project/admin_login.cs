@@ -41,7 +41,7 @@ namespace Project
                 {
                     MessageBox.Show("LoggedIn Successfully");
                     this.Hide();
-                    Form f = new admin_login();
+                    Form f = new Admin_Portal();
                     f.Show();
                 }
                 else

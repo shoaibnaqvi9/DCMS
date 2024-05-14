@@ -63,3 +63,4 @@ C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\Project\obj\Debug\Project.cs
 C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\Project\obj\Debug\Project.csproj.CopyComplete
 C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\Project\obj\Debug\Project.exe
 C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\Project\obj\Debug\Project.pdb
+C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\Project\obj\Debug\Project.Admin_Portal.resources

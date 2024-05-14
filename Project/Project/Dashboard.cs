@@ -64,5 +64,20 @@ namespace Project
             this.Close();
             Environment.Exit(0);
         }
+
+        private void lbldoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblpat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -50,7 +50,7 @@ namespace Project
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new Dashboard();
+            Form f = new Admin_Portal();
             f.Show();
         }
 

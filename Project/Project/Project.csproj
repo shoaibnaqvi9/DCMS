@@ -53,6 +53,12 @@
     <Compile Include="admin_login.Designer.cs">
       <DependentUpon>admin_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_Portal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Portal.Designer.cs">
+      <DependentUpon>Admin_Portal.cs</DependentUpon>
+    </Compile>
     <Compile Include="admin_registration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="admin_login.resx">
       <DependentUpon>admin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Portal.resx">
+      <DependentUpon>Admin_Portal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="admin_registration.resx">
       <DependentUpon>admin_registration.cs</DependentUpon>
