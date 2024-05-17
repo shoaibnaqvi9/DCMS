@@ -1,24 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLogicLayer;
+
 namespace Project
 {
     public partial class patient_appointment : Form
     {
         private int patientid;
+        private string patientName;
 
         private BLL bll = new BLL();
         Random random = new Random();
-        public patient_appointment()
+        public patient_appointment(int patientid)
         {
             InitializeComponent();
+            this.patientid = patientid;
+            BLL b = new BLL();
+            patientName = b.Dashboard_patient(patientid);
+            lblPatient.Text = "Welcome, " + patientName;
         }
 
         private void btnClose_Click(object sender, EventArgs e)

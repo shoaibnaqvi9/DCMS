@@ -138,6 +138,7 @@
             this.Name = "doctor_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "doctor_login";
+            this.Load += new System.EventHandler(this.doctor_login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

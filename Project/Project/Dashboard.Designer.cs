@@ -35,6 +35,7 @@
             this.btnlgadm = new System.Windows.Forms.Button();
             this.btnrgadm = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblDC
@@ -110,6 +111,17 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(513, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(25, 25);
+            this.btnExit.TabIndex = 72;
+            this.btnExit.Text = "X";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -117,6 +129,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(550, 380);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lbladm);
             this.Controls.Add(this.btnlgadm);
@@ -141,5 +154,6 @@
         private System.Windows.Forms.Button btnlgadm;
         private System.Windows.Forms.Button btnrgadm;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnExit;
     }
 }

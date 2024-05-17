@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BusinessLogicLayer;
+using System;
 using System.Windows.Forms;
 
 namespace Project
@@ -13,13 +7,14 @@ namespace Project
     public partial class Dashboard_patient : Form
     {
         private int patientid;
-
+        private string patientName;
         public Dashboard_patient(int patientid)
         {
             InitializeComponent();
             this.patientid = patientid;
-
-            lblPatient.Text = "Welcome, " + patientid;
+            BLL b = new BLL();
+            patientName = b.Dashboard_patient(patientid);
+            lblPatient.Text = "Welcome, " + patientName;
         }
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -43,7 +38,7 @@ namespace Project
         private void btnAppointment_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new patient_appointment();
+            Form f = new patient_appointment(patientid);
             f.Show();
         }
 

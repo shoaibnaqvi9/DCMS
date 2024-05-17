@@ -115,9 +115,9 @@ namespace BusinessLogicLayer
             d.CloseConnection();
             return loginSuccessful;
         }
-        public string Dashboard_patient(string log)
+        public string Dashboard_patient(int log)
         {
-            string patientName = null;
+            string patientName = string.Empty;
             DAL d = new DAL();
             d.OpenConnection();
             d.LoadSpParameters("_spdasboardpatient", log);

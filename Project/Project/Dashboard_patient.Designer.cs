@@ -34,7 +34,6 @@
             this.btnNotification = new System.Windows.Forms.Button();
             this.btnFeedback = new System.Windows.Forms.Button();
             this.lblPRF = new System.Windows.Forms.Label();
-            this.lblPatientName = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblPatient = new System.Windows.Forms.Label();
@@ -94,16 +93,6 @@
             this.lblPRF.TabIndex = 38;
             this.lblPRF.Text = "PATIENT DASHBOARD";
             // 
-            // lblPatientName
-            // 
-            this.lblPatientName.AutoSize = true;
-            this.lblPatientName.BackColor = System.Drawing.Color.Transparent;
-            this.lblPatientName.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPatientName.Location = new System.Drawing.Point(22, 58);
-            this.lblPatientName.Name = "lblPatientName";
-            this.lblPatientName.Size = new System.Drawing.Size(0, 18);
-            this.lblPatientName.TabIndex = 37;
-            // 
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -129,9 +118,12 @@
             // lblPatient
             // 
             this.lblPatient.AutoSize = true;
+            this.lblPatient.BackColor = System.Drawing.Color.Transparent;
+            this.lblPatient.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPatient.ForeColor = System.Drawing.SystemColors.Control;
             this.lblPatient.Location = new System.Drawing.Point(49, 64);
             this.lblPatient.Name = "lblPatient";
-            this.lblPatient.Size = new System.Drawing.Size(0, 13);
+            this.lblPatient.Size = new System.Drawing.Size(0, 20);
             this.lblPatient.TabIndex = 46;
             // 
             // Dashboard_patient
@@ -145,7 +137,6 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblPRF);
-            this.Controls.Add(this.lblPatientName);
             this.Controls.Add(this.btnFeedback);
             this.Controls.Add(this.btnNotification);
             this.Controls.Add(this.btnAppointment);
@@ -166,7 +157,6 @@
         private System.Windows.Forms.Button btnNotification;
         private System.Windows.Forms.Button btnFeedback;
         private System.Windows.Forms.Label lblPRF;
-        private System.Windows.Forms.Label lblPatientName;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblPatient;

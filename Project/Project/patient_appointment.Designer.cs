@@ -41,6 +41,7 @@
             this.dtpAppoint = new System.Windows.Forms.DateTimePicker();
             this.lblAppointmentpurpose = new System.Windows.Forms.Label();
             this.rtbAppointmentpurpose = new System.Windows.Forms.RichTextBox();
+            this.lblPatient = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoctor)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,6 +176,17 @@
             this.rtbAppointmentpurpose.TabIndex = 72;
             this.rtbAppointmentpurpose.Text = "";
             // 
+            // lblPatient
+            // 
+            this.lblPatient.AutoSize = true;
+            this.lblPatient.BackColor = System.Drawing.Color.Transparent;
+            this.lblPatient.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPatient.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblPatient.Location = new System.Drawing.Point(84, 84);
+            this.lblPatient.Name = "lblPatient";
+            this.lblPatient.Size = new System.Drawing.Size(0, 20);
+            this.lblPatient.TabIndex = 73;
+            // 
             // patient_appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,6 +194,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(900, 450);
+            this.Controls.Add(this.lblPatient);
             this.Controls.Add(this.rtbAppointmentpurpose);
             this.Controls.Add(this.lblAppointmentpurpose);
             this.Controls.Add(this.dtpAppoint);
@@ -219,5 +232,6 @@
         private System.Windows.Forms.DateTimePicker dtpAppoint;
         private System.Windows.Forms.Label lblAppointmentpurpose;
         private System.Windows.Forms.RichTextBox rtbAppointmentpurpose;
+        private System.Windows.Forms.Label lblPatient;
     }
 }
