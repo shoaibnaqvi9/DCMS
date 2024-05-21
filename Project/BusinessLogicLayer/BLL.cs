@@ -82,6 +82,23 @@ namespace BusinessLogicLayer
         public string Doctorcontact { get; set; }
         public string Doctoraddress { get; set; }
     }
+
+    public class PatientUpdate : Registration
+    {
+        public override void Register()
+        {
+            OpenAndCloseConnection(() =>
+            {
+                d.LoadSpParameters("_spupdatepatient_details", Patientid, Patientcontact);
+                d.ExecuteQuery();
+                d.UnLoadSpParameters();
+            });
+        }
+
+        public int Patientid { get; set; }
+        public string Patientcontact { get; set; }
+    }
+
     public class AppointmentBooking : Registration
     {
         public override void Register()
@@ -140,6 +157,34 @@ namespace BusinessLogicLayer
             d.CloseConnection();
             return pid;
         }
+        public string Dashboard_doctor(string log)
+        {
+            string doctorName = string.Empty;
+            DAL d = new DAL();
+            d.OpenConnection();
+            d.LoadSpParameters("_spdasboarddoctor", log);
+            SqlDataReader reader = d.GetDataReader();
+            if (reader.Read())
+            {
+                doctorName = reader["doctorname"].ToString();
+            }
+            d.CloseConnection();
+            return doctorName;
+        }
+        public string Dashboard_doctorname(string log)
+        {
+            string did = null;
+            DAL d = new DAL();
+            d.OpenConnection();
+            d.LoadSpParameters("_spdashboard_doctorname", log);
+            SqlDataReader reader = d.GetDataReader();
+            if (reader.Read())
+            {
+                did = reader["doctorid"].ToString();
+            }
+            d.CloseConnection();
+            return did;
+        }
         public bool Login_doctor(string log)
         {
             DAL d = new DAL();
@@ -170,6 +215,22 @@ namespace BusinessLogicLayer
             d.CloseConnection();
             return dt;
         }
-
+        public DataTable GetPatientDetails()
+        {
+            DAL d = new DAL();
+            d.OpenConnection();
+            d.LoadSpParameters("_spgetPatientAppointment");
+            DataTable dt = d.GetDataTable();
+            d.CloseConnection();
+            return dt;
+        }
+        public void Patient_Delete(int pid)
+        {
+            DAL d = new DAL();
+            d.OpenConnection();
+            d.LoadSpParameters("_spdeletepatient_details", pid);
+            d.ExecuteQuery();
+            d.CloseConnection();
+        }
     }
 }

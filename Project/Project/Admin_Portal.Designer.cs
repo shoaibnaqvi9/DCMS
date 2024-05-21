@@ -38,6 +38,7 @@
             this.lblAP = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.btnupdatedelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblpat
@@ -152,6 +153,19 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // btnupdatedelete
+            // 
+            this.btnupdatedelete.BackColor = System.Drawing.SystemColors.Control;
+            this.btnupdatedelete.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdatedelete.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnupdatedelete.Location = new System.Drawing.Point(300, 192);
+            this.btnupdatedelete.Name = "btnupdatedelete";
+            this.btnupdatedelete.Size = new System.Drawing.Size(165, 37);
+            this.btnupdatedelete.TabIndex = 77;
+            this.btnupdatedelete.Text = "Update / Delete";
+            this.btnupdatedelete.UseVisualStyleBackColor = false;
+            this.btnupdatedelete.Click += new System.EventHandler(this.btnupdatedelete_Click);
+            // 
             // Admin_Portal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +173,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(550, 380);
+            this.Controls.Add(this.btnupdatedelete);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblAP);
@@ -189,5 +204,6 @@
         private System.Windows.Forms.Label lblAP;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnupdatedelete;
     }
 }

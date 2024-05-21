@@ -92,6 +92,7 @@
             this.lblPRF.Size = new System.Drawing.Size(238, 22);
             this.lblPRF.TabIndex = 38;
             this.lblPRF.Text = "PATIENT DASHBOARD";
+            this.lblPRF.Click += new System.EventHandler(this.lblPRF_Click);
             // 
             // btnExit
             // 

@@ -46,5 +46,10 @@ namespace Project
         {
 
         }
+
+        private void lblPRF_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

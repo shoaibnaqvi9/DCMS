@@ -46,7 +46,6 @@ namespace Project
                 {
                     throw new FormatException("Invalid contact number format. Contact number must be 12 digits long and contain only numbers.");
                 }
-                BLL b = new BLL();
                 PatientRegistration patientRegistration = new PatientRegistration();
                 patientRegistration.Patientid = Patientid;
                 patientRegistration.Patientname = Patientname;

@@ -10,7 +10,7 @@ namespace Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new patient_login());
+            Application.Run(new Dashboard());
         }
     }
 }

@@ -62,5 +62,12 @@ namespace Project
             this.Close();
             Environment.Exit(0);
         }
+
+        private void btnupdatedelete_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new patient_update_delete();
+            f.Show();
+        }
     }
 }

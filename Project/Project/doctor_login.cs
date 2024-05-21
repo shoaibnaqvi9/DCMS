@@ -23,7 +23,7 @@ namespace Project
                 {
                     MessageBox.Show("LoggedIn Successfully");
                     this.Hide();
-                    Form f = new doctor_login();
+                    Form f = new Dashboard_doctor(log);
                     f.Show();
                 }
                 else

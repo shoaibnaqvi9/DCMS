@@ -71,11 +71,23 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard_doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_doctor.Designer.cs">
+      <DependentUpon>Dashboard_doctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard_patient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard_patient.Designer.cs">
       <DependentUpon>Dashboard_patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctor_checkappointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctor_checkappointment.Designer.cs">
+      <DependentUpon>doctor_checkappointment.cs</DependentUpon>
     </Compile>
     <Compile Include="doctor_login.cs">
       <SubType>Form</SubType>
@@ -100,6 +112,12 @@
     </Compile>
     <Compile Include="patient_login.Designer.cs">
       <DependentUpon>patient_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patient_update_delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patient_update_delete.Designer.cs">
+      <DependentUpon>patient_update_delete.cs</DependentUpon>
     </Compile>
     <Compile Include="server_connection.cs">
       <SubType>Form</SubType>
@@ -127,8 +145,14 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_doctor.resx">
+      <DependentUpon>Dashboard_doctor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard_patient.resx">
       <DependentUpon>Dashboard_patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctor_checkappointment.resx">
+      <DependentUpon>doctor_checkappointment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="doctor_login.resx">
       <DependentUpon>doctor_login.cs</DependentUpon>
@@ -144,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="patient_registration.resx">
       <DependentUpon>patient_registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patient_update_delete.resx">
+      <DependentUpon>patient_update_delete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

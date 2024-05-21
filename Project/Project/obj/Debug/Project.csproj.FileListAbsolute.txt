@@ -64,3 +64,6 @@ C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\Project\obj\Debug\Project.cs
 C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\Project\obj\Debug\Project.exe
 C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\Project\obj\Debug\Project.pdb
 C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\Project\obj\Debug\Project.Admin_Portal.resources
+C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\Project\obj\Debug\Project.patient_update_delete.resources
+C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\Project\obj\Debug\Project.Dashboard_doctor.resources
+C:\Users\Shoaib Naqvi\Documents\GitHub\DCMS\Project\Project\obj\Debug\Project.doctor_checkappointment.resources

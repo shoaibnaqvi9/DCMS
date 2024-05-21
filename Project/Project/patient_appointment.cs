@@ -48,7 +48,6 @@ namespace Project
             {
                 DataTable doctorDetails = bll.GetDoctorDetails();
                 dgvDoctor.DataSource = doctorDetails;
-                MessageBox.Show("Patient ID: "+patientid +"\nPatient Name:"+patientName + "\nPID:" + pid);
             }
             catch (Exception ex)
             {
