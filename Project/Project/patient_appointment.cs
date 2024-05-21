@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 using BusinessLogicLayer;
 
@@ -9,6 +10,7 @@ namespace Project
     {
         private int patientid;
         private string patientName;
+        private string pid;
 
         private BLL bll = new BLL();
         Random random = new Random();
@@ -18,6 +20,7 @@ namespace Project
             this.patientid = patientid;
             BLL b = new BLL();
             patientName = b.Dashboard_patient(patientid);
+            pid = b.Dashboard_patientname(patientid);
             lblPatient.Text = "Welcome, " + patientName;
         }
 
@@ -45,6 +48,7 @@ namespace Project
             {
                 DataTable doctorDetails = bll.GetDoctorDetails();
                 dgvDoctor.DataSource = doctorDetails;
+                MessageBox.Show("Patient ID: "+patientid +"\nPatient Name:"+patientName + "\nPID:" + pid);
             }
             catch (Exception ex)
             {
@@ -73,42 +77,34 @@ namespace Project
         }
         private void btnAppoint_Click(object sender, EventArgs e)
         {
-            int appointmentId = random.Next(100000);
-            string appointment_status = "Booked";
- //           try
- //           {
- //               patient_id INT,
- //   doctor_id INT,
-	//appointment_date DATE,
- //   appointment_purpose NVARCHAR(MAX),
-	//appointment_status NVARCHAR(MAX)
- //               string Doctorname = txtDoctorname.Text;
- //               DateTime AppointmentDate= DateTime.Parse(dtpAppoint.Text);
- //               string Doctorspecialization = txtDoctorspecialization.Text;
- //               string Doctoraddress = txtDoctoraddress.Text;
+            if (dgvDoctor.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a doctor.");
+                return;
+            }
+            try
+            {
+                int appointmentId = random.Next(100000);
+                int doctorId = Convert.ToInt32(dgvDoctor.SelectedRows[0].Cells[0].Value);
+                DateTime appointmentDate = dtpAppoint.Value;
+                string appointmentPurpose = rtbAppointmentpurpose.Text;
+                string appointment_status = "Booked";
+                BLL b = new BLL();
+                AppointmentBooking booking = new AppointmentBooking();
+                booking.appointmentId = appointmentId;
+                booking.patientid = int.Parse(pid);
+                booking.doctorId = doctorId;
+                booking.appointmentDate = appointmentDate;
+                booking.appointmentPurpose = appointmentPurpose;
+                booking.appointment_status = appointment_status;
 
- //               if (!System.Text.RegularExpressions.Regex.IsMatch(Doctorcontact, @"^\d{12}$"))
- //               {
- //                   throw new FormatException("Invalid contact number format. Contact number must be 12 digits long and contain only numbers.");
- //               }
- //               DoctorRegistration doctorRegistration = new DoctorRegistration();
- //               doctorRegistration.Doctorid = Doctorid;
- //               doctorRegistration.Doctorname = Doctorname;
- //               doctorRegistration.Doctorspecialization = Doctorspecialization;
- //               doctorRegistration.Doctorcontact = Doctorcontact;
- //               doctorRegistration.Doctoraddress = Doctoraddress;
- //               doctorRegistration.Register();
- //               MessageBox.Show("Registered");
- //           }
- //           catch (FormatException ex)
- //           {
- //               MessageBox.Show("Invalid input format: " + ex.Message);
- //           }
- //           catch (Exception ex)
- //           {
- //               MessageBox.Show("An error occurred: " + ex.Message);
- //           }
-
+                booking.Register();
+                MessageBox.Show("Appointment booked successfully.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
         }
     }
 }

@@ -131,7 +131,7 @@
             this.dgvDoctor.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvDoctor.Location = new System.Drawing.Point(39, 153);
             this.dgvDoctor.Name = "dgvDoctor";
-            this.dgvDoctor.Size = new System.Drawing.Size(297, 238);
+            this.dgvDoctor.Size = new System.Drawing.Size(362, 238);
             this.dgvDoctor.TabIndex = 58;
             this.dgvDoctor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDoctor_CellContentClick);
             // 

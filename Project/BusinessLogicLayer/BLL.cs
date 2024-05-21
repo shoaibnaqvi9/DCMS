@@ -82,26 +82,23 @@ namespace BusinessLogicLayer
         public string Doctorcontact { get; set; }
         public string Doctoraddress { get; set; }
     }
-    public class AppointmentBooking: Registration
+    public class AppointmentBooking : Registration
     {
         public override void Register()
         {
             OpenAndCloseConnection(() =>
             {
-                d.LoadSpParameters("_spinsertappointment_detail", Patientid, Patientname, Patientdob, Patientgender, PatientCNIC, Patientweight, Patientcontact, Patientaddress);
+                d.LoadSpParameters("_spinsertappointment_detail", appointmentId, patientid,doctorId, appointmentDate, appointmentPurpose, appointment_status);
                 d.ExecuteQuery();
                 d.UnLoadSpParameters();
             });
         }
-
-        public int Patientid { get; set; }
-        public string Patientname { get; set; }
-        public DateTime Patientdob { get; set; }
-        public string Patientgender { get; set; }
-        public string PatientCNIC { get; set; }
-        public int Patientweight { get; set; }
-        public string Patientcontact { get; set; }
-        public string Patientaddress { get; set; }
+        public int appointmentId { get; set; }
+        public int patientid { get; set; }
+        public int doctorId { get; set; }
+        public DateTime appointmentDate { get; set; }
+        public string appointmentPurpose { get; set; }
+        public string appointment_status { get; set; }
     }
     public class BLL
     {
@@ -129,7 +126,20 @@ namespace BusinessLogicLayer
             d.CloseConnection();
             return patientName;
         }
-
+        public string Dashboard_patientname(int log)
+        {
+            string pid=null;
+            DAL d = new DAL();
+            d.OpenConnection();
+            d.LoadSpParameters("_spdashboard_patientname", log);
+            SqlDataReader reader = d.GetDataReader();
+            if (reader.Read())
+            {
+                pid = reader["patientid"].ToString();
+            }
+            d.CloseConnection();
+            return pid;
+        }
         public bool Login_doctor(string log)
         {
             DAL d = new DAL();
